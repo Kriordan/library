@@ -3,6 +3,8 @@
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
+  <%= @book.isbn_number %>
+  <%= @book.library_branch %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
