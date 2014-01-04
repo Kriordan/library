@@ -1,0 +1,20 @@
+<h1>Listing books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>ISBN Number</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render partial: "book", collection: @books %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>
